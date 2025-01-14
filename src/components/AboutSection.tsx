@@ -2,35 +2,37 @@ import { Check } from "lucide-react";
 
 export const AboutSection = () => {
   const benefits = [
-    "Bis zu 25% weniger Gasverbrauch und bis zu 30% mehr Leistung bei den neuesten Gasherden.",
-    "Einzigartige Brillanz und Langlebigkeit bei einfacher Reinigung, zertifiziert nach ISO 9001.",
-    "Elegante und raffinierte Designs, die von Kunst und Schönheit inspiriert sind, geliebt von Architekten und Kunden.",
-    "Reduzierung des Energieverbrauchs mit Produkten, die für bessere Ergonomie, Funktionalität und geringere Umweltauswirkungen entwickelt wurden.",
+    "<strong>Ästhetik und Design</strong>: Cooking Surface passt sich dem Trend an, Oberflächen zu integrieren und Freiräume zu schaffen, um Ihre Küche modern und funktional zu gestalten.",
+    "<strong>Energieeffizienz</strong>: Profitieren Sie von den Vorteilen der Induktionstechnologie, die den Energieverbrauch senkt und gleichzeitig Kochzeiten reduziert – ideal für moderne Haushalte.",
+    "<strong>Multifunktionalität</strong>: Nutzen Sie den maximalen Arbeitsbereich, indem Sie das Induktionskochfeld elegant in die Arbeitsplatte integrieren, was Platz spart und Ihre Küche optimiert.",
+    "<strong>Langfristige Garantie</strong>: Wir bieten eine 5-jährige Garantie auf die Induktionstechnologie und 25 Jahre auf die hochwertige Porzellan-Arbeitsplatte, damit Sie auf Qualität vertrauen können.",
   ];
 
   return (
     <section className="py-20">
-      <div className="container">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <a href="https://fosterspa.com">
-            <img
-              src="/images/foster-kitchen.png"
-              alt="Foster Spa Logo"
-              className="shadow-xl h-full w-full"
-            />
-            </a>
+          <div className="shadow-xl rounded-lg overflow-hidden">
+            <iframe
+              width="100%"
+              height="415"
+              src="https://www.youtube.com/embed/WpyzHNNCIJE?autoplay=1"
+              title="Cooking Surface Induktionskochfeld Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <div className="animate-fade-in">
-            <h2 className="text-4xl font-light mb-6">Warum Foster Küchen wählen?</h2>
-            <p className="text-gray mb-8">
-              Mit über drei Jahrzehnten Erfahrung haben wir die Kunst perfektioniert, außergewöhnliche Küchen zu kreieren, die beeindruckendes Design mit praktischer Funktionalität verbinden.
+            <h2 className="text-3xl text-[#B6005B] mb-6 inline-block">Warum Cooking Surface Induktionskochfelder wählen?</h2>
+            <p className=" text-gray mb-8">
+              Cooking Surface bietet innovative Induktionskochfelder, die modernes Design mit hoher Energieeffizienz kombinieren. Perfekt für anspruchsvolle Küchen, die Funktionalität und Stil vereinen.
             </p>
             <ul className="space-y-4">
               {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-center gap-3">
+                <li key={index} className="flex items-center gap-3  text-gray">
                   <Check className="text-primary" />
-                  <span>{benefit}</span>
+                  <span dangerouslySetInnerHTML={{ __html: benefit }}></span>
                 </li>
               ))}
             </ul>

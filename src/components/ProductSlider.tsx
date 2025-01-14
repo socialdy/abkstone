@@ -6,63 +6,28 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const products = [
   {
     id: 1,
-    name: "Edelstahlspülen",
-    image: "/images/edelstahlspühle.jpg", // Ersetze dies durch das echte Bild
-    description: "Robuste und pflegeleichte Edelstahlspülen, die Ihre Küche funktional und stilvoll bereichern. Perfekt für moderne Haushalte, die Qualität und Langlebigkeit schätzen.",
+    name: "Induktionskochfelder",
+    image: "/images/induktionskochfelder.jpg", // Ersetze dies durch das echte Bild
+    description: "Energieeffiziente Induktionskochfelder für präzises Kochen mit schneller Hitzeentwicklung und gleichmäßiger Temperaturverteilung – ideal für Ihre moderne Küche. Mit innovativer Technologie für optimierte Energieausnutzung und eine benutzerfreundliche Steuerung für perfekte Kochergebnisse.",
   },
   {
     id: 2,
-    name: "Mischbatterien",
-    image: "/images/mischbatterien.jpg", // Ersetze dies durch das echte Bild
-    description: "Elegante Mischbatterien für Ihre Küche: Hohe Funktionalität trifft auf modernes Design. Perfekt für anspruchsvolle Haushalte, die Wert auf Komfort und Stil legen.",
+    name: "Cookware",
+    image: "/images/cookware.jpg", // Ersetze dies durch das echte Bild
+    description: "Unsere speziell entwickelten Kochgeschirr-Sets maximieren die Effizienz der Cooking Surface Prime. Mit innovativen Materialien und einem einzigartigen Design, das den direkten Kontakt mit der Kochfläche ermöglicht, ohne zusätzliche Abstandshalter. Perfekt für die Nutzung mit Induktionskochfeldern, um die Lebensdauer der Oberfläche zu verlängern und Überhitzung zu vermeiden.",
   },
   {
     id: 3,
-    name: "Induktionskochfelder",
-    image: "/images/induktionskochfelder.jpg", // Ersetze dies durch das echte Bild
-    description: "Energieeffiziente Induktionskochfelder für präzises Kochen mit schneller Hitzeentwicklung und gleichmäßiger Temperaturverteilung – ideal für Ihre moderne Küche.",
-  },
+    name: "Outdoor-Küche",
+    image: "/images/outdoor.png", // Ersetze dies durch das tatsächliche Bild
+    description: "Revolutionieren Sie Ihre Terrasse oder Ihren Garten mit einer Outdoor-Küche und dem fortschrittlichsten Induktionssystem. Verfügbar in natürlichen Oberflächen, mit integriertem Schrank, hoher Wetterbeständigkeit und anpassbaren Plattenmarkierungen. Perfekt für Kochliebhaber – drinnen und draußen."
+  },   
+
   {
     id: 4,
-    name: "Gaskochfelder",
-    image: "/images/gaskochfolder.jpg", // Ersetze dies durch das echte Bild
-    description: "Professionelle Gaskochfelder für passionierte Köche, die das authentische Kocherlebnis mit präziser Flammenkontrolle schätzen. Ideal für schnelle und gleichmäßige Erwärmung.",
-  },
-  {
-    id: 5,
-    name: "Dunstabzugshauben",
-    image: "/images/dunstabzugshaube.jpg", // Ersetze dies durch das echte Bild
-    description: "Effiziente Dunstabzugshauben, die unangenehme Dämpfe und Gerüche zuverlässig entfernen und gleichzeitig Ihre Küche mit stilvollem Design ergänzen.",
-  },
-  {
-    id: 6,
-    name: "Backöfen und Zubehör",
-    image: "/images/backofen.jpg", // Ersetze dies durch das echte Bild
-    description: "Innovative Backöfen mit fortschrittlichen Funktionen und hochwertigem Zubehör, die das Backen und Kochen zu einem mühelosen und genussvollen Erlebnis machen.",
-  },
-  {
-    id: 7,
-    name: "Outdoor",
-    image: "/images/outdoor_v2.jpg", // Ersetze dies durch das echte Bild
-    description: "Küchengeräte für den Outdoor-Bereich: Robuste, wetterfeste Geräte, die Ihnen ermöglichen, auch im Freien leckere Mahlzeiten zuzubereiten – perfekt für Grillabende und Outdoor-Events.",
-  },
-  {
-    id: 8,
-    name: "Aufsatzgerät und Edelstahl-Arbeitsplatte",
-    image: "/images/aufsatzgerät.jpg", // Ersetze dies durch das echte Bild
-    description: "Praktische Aufsatzgeräte und elegante Edelstahl-Arbeitsplatten, die nicht nur funktional sind, sondern auch einen modernen Touch in Ihre Küche bringen.",
-  },
-  {
-    id: 9,
-    name: "Geschirrspüler",
-    image: "/images/geschirrspüler.jpg", // Ersetze dies durch das echte Bild
-    description: "Hightech-Geschirrspüler, die mit modernster Technologie ausgestattet sind, um Ihnen eine mühelose und effiziente Reinigung zu ermöglichen. Für glänzende Sauberkeit ohne Aufwand.",
-  },
-  {
-    id: 10,
-    name: "Steckdosen",
-    image: "/images/steckdosen.jpg", // Ersetze dies durch das echte Bild
-    description: "Hightech-Geschirrspüler, die mit modernster Technologie ausgestattet sind, um Ihnen eine mühelose und effiziente Reinigung zu ermöglichen. Für glänzende Sauberkeit ohne Aufwand.",
+    name: "Induktionskochfelder Zubehör",
+    image: "/images/zubehoer.jpg", // Ersetze dies durch das echte Bild
+    description: "Optimieren Sie Ihr Kocherlebnis mit den praktischen Zubehörteilen für das Cooking Surface Prime Induktionskochfeld. Mit Funktionen wie individueller Steuerung über Drehknöpfe, 9 Leistungsstufen und einem integrierten Timer bieten diese Zubehörteile volle Kontrolle und Flexibilität. Perfekt für moderne Küchen, die auf Stil und Funktionalität setzen.",
   },
 ];
 
@@ -85,9 +50,9 @@ export const ProductSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-light" id="produkte">
+    <section className="py-20 bg[##f5f5f5]" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-4xl font-light text-center mb-12 uppercase">Produkte</h2>
+        <h2 className="text-3xl font-light text-center mb-12">Produkte</h2>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products
@@ -101,7 +66,7 @@ export const ProductSlider = () => {
                       className=""
                     />
                     <div className="p-6 md:p-8 text-center">
-                      <h3 className="text-xl lowercase font-[500] md:text-2xl mb-2">{product.name}</h3>
+                      <h3 className="text-xl md:text-2xl mb-2">{product.name}</h3>
                       <p className="text-gray mb-4">{product.description}</p>
                     </div>
                   </div>
