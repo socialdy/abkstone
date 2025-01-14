@@ -16,7 +16,7 @@ export const AboutSection = () => {
             <iframe
               width="100%"
               height="415"
-              src="https://www.youtube.com/embed/WpyzHNNCIJE?autoplay=1"
+              src="https://www.youtube.com/embed/WpyzHNNCIJE?autoplay=1&mute=1"
               title="Cooking Surface Induktionskochfeld Video"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
