@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
-
+t
 const App = () => (
   <BrowserRouter>
     <TooltipProvider>
