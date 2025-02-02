@@ -24,7 +24,7 @@ export const AboutSection = () => {
             ></iframe>
           </div>
           <div className="animate-fade-in">
-            <h2 className="text-3xl text-[#B6005B] mb-6 inline-block">Warum Cooking Surface Induktionskochfelder wählen?</h2>
+            <h2 className="text-4xl text-[#B6005B] font-light mb-6 inline-block">Warum Cooking Surface Induktionskochfelder wählen?</h2>
             <p className=" text-gray mb-8">
               Cooking Surface bietet innovative Induktionskochfelder, die modernes Design mit hoher Energieeffizienz kombinieren. Perfekt für anspruchsvolle Küchen, die Funktionalität und Stil vereinen.
             </p>

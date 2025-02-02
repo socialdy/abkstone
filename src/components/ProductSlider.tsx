@@ -52,7 +52,7 @@ export const ProductSlider = () => {
   return (
     <section className="py-20 bg[##f5f5f5]" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-3xl font-light text-center mb-12">Produkte</h2>
+        <h2 className="text-4xl font-light text-center mb-12">Produkte</h2>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products

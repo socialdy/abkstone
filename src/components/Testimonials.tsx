@@ -49,7 +49,7 @@ export const Testimonials = () => {
   return (
     <section className="py-20 bg-[#B6005B] text-white" id="referenzen">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl  text-center mb-16 ">Referenzen</h2>
+        <h2 className="text-4xl  font-light text-center mb-16 ">Referenzen</h2>
         <Carousel
           opts={{
             align: "start",
