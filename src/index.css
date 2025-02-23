@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: 'Verlag Condensed';
-  src: url('fonts/Verlag Condensed Bold.otf');
+  src: url('fonts/Verlag_Condensed_Bold.otf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Verlag Condensed';
-  src: url('fonts/Verlag Condensed Book.otf');
+  src: url('fonts/Verlag_Condensed_Book.otf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Verlag Condensed';
-  src: url('fonts/Verlag Condensed Light.otf');
+  src: url('fonts/Verlag_Condensed_Light.otf');
   font-weight: 200;
 }
 
