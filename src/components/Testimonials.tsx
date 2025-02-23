@@ -12,44 +12,40 @@ export const Testimonials = () => {
       id: 1,
       name: "Sarah und Thomas",
       role: "Familienhaushalt",
-      quote: "Das Cooking Surface Induktionskochfeld hat unsere Küche wirklich aufgewertet. Wir genießen die schnelle Zubereitung und die hohe Energieeffizienz. Besonders begeistert sind wir von der einfachen Bedienung und dem modernen Design, das perfekt zu unserer Küche passt.",
+      quote: "Wir haben uns für das Basaltina Smoke entschieden und es war die beste Wahl für unsere Küche! Die Oberfläche fühlt sich so natürlich an und das Design passt perfekt zu unserem modernen Stil. Es sieht nicht nur toll aus, sondern ist auch pflegeleicht – wir lieben es!",
+      product: "Basaltina Smoke",
+      image: "/images/basaltina_smoke.jpg",
     },
     {
       id: 2,
       name: "Franziska",
-      role: "Selbstständige, Home Office",
-      quote: "Ich arbeite viel von zu Hause und das Cooking Surface ist mein täglicher Begleiter. Es spart nicht nur Energie, sondern auch Zeit. Die Heizleistung ist beeindruckend und der Platz, den es in der Küche spart, ist ein riesiger Vorteil für uns.",
+      role: "Selbstständige",
+      quote: "Das Serena-Material hat wirklich mein Home Office aufgewertet. Die warme, elegante Optik lässt meinen Raum so viel einladender wirken. Es ist widerstandsfähig und pflegeleicht, was mir besonders in meinem stressigen Arbeitsalltag sehr entgegenkommt. Ich bin absolut begeistert!",
+      product: "Serena",
+      image: "/images/serena.jpg",
     },
     {
       id: 3,
       name: "Peter",
       role: "Restaurantchef",
-      quote: "Als Restaurantbesitzer ist Effizienz entscheidend. Das Cooking Surface Induktionskochfeld hilft uns, die Kochzeiten zu verkürzen und gleichzeitig den Energieverbrauch zu senken. Es ist robust, einfach zu bedienen und bietet eine hervorragende Leistung – perfekt für unsere professionelle Küche.",
+      quote: "Für unsere Küche haben wir die Piasentina Mud-Platten gewählt, und sie sind einfach top. Sie sind nicht nur optisch ein Highlight, sondern halten auch jeder Belastung stand. Das Material ist robust und extrem pflegeleicht, was uns in einem schnelllebigen Restaurantalltag sehr hilft.",
+      product: "Piasentina Mud",
+      image: "/images/piasentina_mud.jpg",
     },
     {
       id: 4,
       name: "Julia und Marco",
       role: "Junges Paar",
-      quote: "Wir haben das Cooking Surface Induktionskochfeld in unserer neuen Küche eingebaut und sind begeistert. Die schnelle Erwärmung der Töpfe und die einfache Reinigung sind großartig. Zudem trägt es zur Energieeinsparung bei, was uns als umweltbewusstes Paar sehr wichtig ist.",
-    },
-    {
-      id: 5,
-      name: "Lena",
-      role: "Architektin",
-      quote: "Als Architektin lege ich großen Wert auf Design und Funktionalität. Das Cooking Surface Induktionskochfeld überzeugt in beidem. Es integriert sich perfekt in jedes moderne Küchendesign, spart Platz und bietet dennoch hervorragende Leistung. Zudem ist es sehr pflegeleicht – ein echtes Highlight für jede Küche.",
-    },
-    {
-      id: 6,
-      name: "Markus",
-      role: "Koch in einer Großküche",
-      quote: "In unserer Großküche hat das Cooking Surface Induktionskochfeld einen echten Unterschied gemacht. Es bietet hohe Leistung bei gleichzeitig niedrigem Energieverbrauch. Wir können schneller arbeiten und gleichzeitig unsere Energiekosten senken. Die Qualität ist hervorragend, und das Design passt hervorragend zu unserer professionellen Küche.",
+      quote: "Wir haben uns für Pirenei Ecru entschieden und sind einfach hin und weg. Es passt so perfekt zu unserer modernen Küche. Das Beste ist, dass es extrem pflegeleicht ist und immer noch so gut aussieht wie am ersten Tag. Die FullBody3D-Technologie macht den Unterschied – es fühlt sich an, als wäre es direkt aus der Natur.",
+      product: "Pirenei Ecru",
+      image: "/images/pirenei_ecru.jpg",
     },
   ];
 
   return (
-    <section className="py-20 bg-[#B6005B] text-white" id="referenzen">
+    <section className="py-20 bg-[#f4f4f4]" id="referenzen">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl  font-light text-center mb-16 ">Referenzen</h2>
+        <h2 className="text-center mb-16 ">Referenzen</h2>
         <Carousel
           opts={{
             align: "start",
@@ -63,19 +59,18 @@ export const Testimonials = () => {
                 key={testimonial.id}
                 className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
               >
-                <div className="bg-white/10 p-8 h-full animate-fade-in">
+                <div className="bg-white p-8 h-full animate-fade-in">
                   <div className="flex flex-col h-full justify-between">
                     <p className="text-lg mb-8 italic">"{testimonial.quote}"</p>
                     <div>
                       <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-gray-300">{testimonial.role}</p>
+                      <p className="text-black">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          {/* Pfeile werden auf Mobile und Tablet ausgeblendet */}
           <CarouselPrevious className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -left-12 z-10 hover:bg-white/20 text-black" />
           <CarouselNext className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -right-12 z-10 hover:bg-white/20 text-black" />
         </Carousel>

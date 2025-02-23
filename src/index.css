@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Verlag Condensed';
+  src: url('fonts/Verlag Condensed Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Verlag Condensed';
+  src: url('fonts/Verlag Condensed Book.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Verlag Condensed';
+  src: url('fonts/Verlag Condensed Light.otf');
+  font-weight: 200;
+}
+
+body{
+  font-family: 'Verlag Condensed';
+  font-weight: 400;
+    color: #222222;
+    letter-spacing: 1px;
+    line-height: auto;
+}
+
+footer p,li,a{
+  color: #222222
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Verlag Condensed';
+  font-weight: 700;
+  color: #222222;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: auto;
+}
+
+nav, .mobile{
+  line-height: 25px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

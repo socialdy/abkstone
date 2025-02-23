@@ -14,10 +14,10 @@ export const Header = () => {
         <nav className="flex items-center justify-between h-20">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
-            <a href="/" className="h-8 sm:h-10">
+            <a href="/" className="h-6 sm:h-6">
               <img
-                src="/images/cooking-surface-logo.png"
-                alt="Foster d"
+                src="/images/abkstone_logo.svg"
+                alt="ABK Stone Logo"
                 className="h-full"
               />
             </a>
@@ -34,26 +34,24 @@ export const Header = () => {
           <div className="hidden lg:flex items-center gap-10">
             <a
               href="#produkte"
-              className="text-[#1f2124] hover:text-[#D2006D] tracking-wide hover:underline transition-all"
+              className=""
             >
               Produkte
             </a>
             <a
               href="#ueber-cooking-surface"
-              className="text-[#1f2124] hover:text-[#D2006D]  tracking-wide hover:underline transition-all"
+              className=""
             >
               Über Cooking Surface
             </a>
             <a
               href="/#referenzen"
-              className="text-[#1f2124] hover:text-[#D2006D]  tracking-wide hover:underline transition-all"
+              className=""
             >
               Referenzen
             </a>
             <a href="/#beratung">
-              <Button className="bg-[#D2006D] hover:bg-[#B6005B] text-white  transition-all py-2 px-4 shadow-md rounded-md">
                 Jetzt Beratung anfordern
-              </Button>
             </a>
           </div>
 
@@ -61,7 +59,7 @@ export const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-[#1f2124] hover:text-[#D2006D] focus:outline-none"
+              className="text-[##222222] focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,34 +81,32 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white text-[#1f2124] border-t border-gray-100 shadow-md">
+          <div className="lg:hidden bg-white text-[#222222] border-t border-gray-100 shadow-md mobile">
             <div className="flex flex-col items-start gap-4 py-6 pl-6">
               <a
                 href="/#produkte"
-                className="text-[#1f2124] hover:text-[#D2006D] font-medium transition-all"
+                className="uppercase transition-all"
                 onClick={toggleMobileMenu}
               >
                 Produkte
               </a>
               <a
                 href="/#ueber-cooking-surface"
-                className="text-[#1f2124] hover:text-[#D2006D] font-medium transition-all"
+                className=" uppercase transition-all"
                 onClick={toggleMobileMenu}
               >
                 Über Cooking Surface
               </a>
               <a
                 href="/#referenzen"
-                className="text-[#1f2124] hover:text-[#D2006D] font-medium transition-all"
+                className=" uppercase transition-all"
                 onClick={toggleMobileMenu}
               >
                 Referenzen
               </a>
-              <a href="/#beratung" onClick={toggleMobileMenu}>
-                <Button className="bg-[#D2006D] hover:bg-[#B6005B] text-white font-semibold py-2 px-4 shadow-md rounded-md">
-                  Jetzt Beratung anfordern
-                </Button>
-              </a>
+              <a href="/#beratung" className="uppercase transition-all">
+                Jetzt Beratung anfordern
+            </a>
             </div>
           </div>
         )}

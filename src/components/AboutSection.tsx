@@ -2,10 +2,10 @@ import { Check } from "lucide-react";
 
 export const AboutSection = () => {
   const benefits = [
-    "<strong>Ästhetik und Design</strong>: Cooking Surface passt sich dem Trend an, Oberflächen zu integrieren und Freiräume zu schaffen, um Ihre Küche modern und funktional zu gestalten.",
-    "<strong>Energieeffizienz</strong>: Profitieren Sie von den Vorteilen der Induktionstechnologie, die den Energieverbrauch senkt und gleichzeitig Kochzeiten reduziert – ideal für moderne Haushalte.",
-    "<strong>Multifunktionalität</strong>: Nutzen Sie den maximalen Arbeitsbereich, indem Sie das Induktionskochfeld elegant in die Arbeitsplatte integrieren, was Platz spart und Ihre Küche optimiert.",
-    "<strong>Langfristige Garantie</strong>: Wir bieten eine 5-jährige Garantie auf die Induktionstechnologie und 25 Jahre auf die hochwertige Porzellan-Arbeitsplatte, damit Sie auf Qualität vertrauen können.",
+    "<strong>Ästhetik und Design</strong>: ABKSTONE bietet eine elegante Palette, die die natürliche Schönheit von Stein, Marmor und Beton in jedes Raumkonzept integriert und so eine moderne und funktionale Gestaltung ermöglicht.",
+    "<strong>Technologische Innovation</strong>: ABKSTONE nutzt kontinuierliche Investitionen in Forschung und Entwicklung, um die besten Leistungseigenschaften von Steinzeug zu maximieren und ästhetische Vielfalt zu schaffen.",
+    "<strong>Vielseitigkeit</strong>: Die großen, modularen Platten von ABKSTONE bieten unzählige Möglichkeiten für die Gestaltung von Böden, Wänden und Oberflächen in modernen Architekturen und Innenräumen.",
+    "<strong>Langfristige Qualität</strong>: ABKSTONE garantiert langlebige Produkte, die resistent gegen Kratzer, Flecken, Säuren und hohe Temperaturen sind, was sie zur perfekten Wahl für anspruchsvolle Anwendungen macht.",
   ];
 
   return (
@@ -16,22 +16,22 @@ export const AboutSection = () => {
             <iframe
               width="100%"
               height="415"
-              src="https://www.youtube.com/embed/WpyzHNNCIJE?autoplay=1&mute=1"
-              title="Cooking Surface Induktionskochfeld Video"
+              src="https://www.youtube.com/embed/3WLf6v3pXQY?autoplay=1&mute=1&embeds_referring_euri=https%3A%2F%2Fwww.abkstone.com%2F&source_ve_path=OTY3MTQ"
+              title="ABKSTONE Video"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
           <div className="animate-fade-in">
-            <h2 className="text-4xl text-[#B6005B] font-light mb-6 inline-block">Warum Cooking Surface Induktionskochfelder wählen?</h2>
-            <p className=" text-gray mb-8">
-              Cooking Surface bietet innovative Induktionskochfelder, die modernes Design mit hoher Energieeffizienz kombinieren. Perfekt für anspruchsvolle Küchen, die Funktionalität und Stil vereinen.
+            <h2 className=" mb-6 inline-block">Warum ABKSTONE wählen?</h2>
+            <p className=" mb-8">
+              ABKSTONE bietet innovative Produkte, die modernste Technologie mit der natürlichen Schönheit von Stein kombinieren. Ideal für anspruchsvolle Architekturen und Innenräume, die Funktionalität und Stil vereinen.
             </p>
             <ul className="space-y-4">
               {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-center gap-3  text-gray">
-                  <Check className="text-primary" />
+                <li key={index} className="flex items-center gap-3 ">
+                  <Check className="" />
                   <span dangerouslySetInnerHTML={{ __html: benefit }}></span>
                 </li>
               ))}
@@ -42,6 +42,3 @@ export const AboutSection = () => {
     </section>
   );
 };
-
-
-

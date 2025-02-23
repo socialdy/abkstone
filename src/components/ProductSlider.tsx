@@ -6,30 +6,81 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const products = [
   {
     id: 1,
-    name: "Induktionskochfelder",
-    image: "/images/induktionskochfelder.jpg", // Ersetze dies durch das echte Bild
-    description: "Energieeffiziente Induktionskochfelder für präzises Kochen mit schneller Hitzeentwicklung und gleichmäßiger Temperaturverteilung – ideal für Ihre moderne Küche. Mit innovativer Technologie für optimierte Energieausnutzung und eine benutzerfreundliche Steuerung für perfekte Kochergebnisse.",
+    name: "Basaltina Smoke",
+    image: "/images/basaltina_smoke.jpg", // Ersetze dies durch das echte Bild
   },
   {
     id: 2,
-    name: "Cookware",
-    image: "/images/cookware.jpg", // Ersetze dies durch das echte Bild
-    description: "Unsere speziell entwickelten Kochgeschirr-Sets maximieren die Effizienz der Cooking Surface Prime. Mit innovativen Materialien und einem einzigartigen Design, das den direkten Kontakt mit der Kochfläche ermöglicht, ohne zusätzliche Abstandshalter. Perfekt für die Nutzung mit Induktionskochfeldern, um die Lebensdauer der Oberfläche zu verlängern und Überhitzung zu vermeiden.",
+    name: "Serena",
+    image: "/images/serena.jpg", // Ersetze dies durch das echte Bild
   },
   {
     id: 3,
-    name: "Outdoor-Küche",
-    image: "/images/outdoor.png", // Ersetze dies durch das tatsächliche Bild
-    description: "Revolutionieren Sie Ihre Terrasse oder Ihren Garten mit einer Outdoor-Küche und dem fortschrittlichsten Induktionssystem. Verfügbar in natürlichen Oberflächen, mit integriertem Schrank, hoher Wetterbeständigkeit und anpassbaren Plattenmarkierungen. Perfekt für Kochliebhaber – drinnen und draußen."
-  },   
-
+    name: "Piasentina Mud",
+    image: "/images/piasentina_mud.jpg", // Ersetze dies durch das echte Bild
+  },
   {
     id: 4,
-    name: "Induktionskochfelder Zubehör",
-    image: "/images/zubehoer.jpg", // Ersetze dies durch das echte Bild
-    description: "Optimieren Sie Ihr Kocherlebnis mit den praktischen Zubehörteilen für das Cooking Surface Prime Induktionskochfeld. Mit Funktionen wie individueller Steuerung über Drehknöpfe, 9 Leistungsstufen und einem integrierten Timer bieten diese Zubehörteile volle Kontrolle und Flexibilität. Perfekt für moderne Küchen, die auf Stil und Funktionalität setzen.",
+    name: "Pirenei Ecru",
+    image: "/images/pirenei_ecru.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 5,
+    name: "Pirenei Grey",
+    image: "/images/pirenei_grey.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 6,
+    name: "Native Ash",
+    image: "/images/native_ash.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 7,
+    name: "Native Red",
+    image: "/images/native_red.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 8,
+    name: "Vintage Stone Fog",
+    image: "/images/vintage_stone_fog.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 9,
+    name: "Calacatta Masterpiece",
+    image: "/images/calacatta_masterpiece.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 10,
+    name: "Silver Roots",
+    image: "/images/silver_roots.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 11,
+    name: "Statuario Supremo",
+    image: "/images/statuario_supremo.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 12,
+    name: "Calacatta Borghini",
+    image: "/images/calacatta_borghini.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 13,
+    name: "Black Passion",
+    image: "/images/black_passion.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 14,
+    name: "Bianco Vagli",
+    image: "/images/bianco_vagli.jpg", // Ersetze dies durch das echte Bild
+  },
+  {
+    id: 15,
+    name: "Antartide",
+    image: "/images/antartide.jpg", // Ersetze dies durch das echte Bild
   },
 ];
+
 
 
 export const ProductSlider = () => {
@@ -50,24 +101,25 @@ export const ProductSlider = () => {
   };
 
   return (
-    <section className="py-20 bg[##f5f5f5]" id="produkte">
+    <section className="py-20 bg-white" id="paletten">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-4xl font-light text-center mb-12">Produkte</h2>
+        <h2 className="text-center mb-2">Paletten</h2>
+        <p className="text-lg text-center text-gray-700 max-w-2xl mx-auto mb-12">
+          Entdecken Sie unsere exklusiven Materialpaletten, die für höchste Qualität und Ästhetik stehen.
+        </p>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products
               .slice(currentIndex, currentIndex + slidesPerView)
               .map((product) => (
                 <div key={product.id} className="flex-1 animate-fade-in">
-                  <div className="bg-white shadow-lg">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className=""
-                    />
-                    <div className="p-6 md:p-8 text-center">
-                      <h3 className="text-xl md:text-2xl mb-2">{product.name}</h3>
-                      <p className="text-gray mb-4">{product.description}</p>
+<div className="relative bg-white shadow-lg h-64 md:h-80">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${product.image})` }}
+                  ></div>
+                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20">
+                     <h2 className="text-white text-xl md:text-2xl font-semibold">{product.name}</h2>
                     </div>
                   </div>
                 </div>
