@@ -101,7 +101,7 @@ export const ProductSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="paletten">
+    <section className="py-20 bg-white" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
         <h2 className="text-center mb-2">Paletten</h2>
         <p className="text-lg text-center text-gray-700 max-w-2xl mx-auto mb-12">

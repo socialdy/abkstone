@@ -39,10 +39,10 @@ export const Header = () => {
               Produkte
             </a>
             <a
-              href="#ueber-cooking-surface"
+              href="#ueber-abk-stone"
               className=""
             >
-              Über Cooking Surface
+              Über ABK Stone            
             </a>
             <a
               href="/#referenzen"
@@ -91,11 +91,11 @@ export const Header = () => {
                 Produkte
               </a>
               <a
-                href="/#ueber-cooking-surface"
+                href="/#ueber-abk-stone"
                 className=" uppercase transition-all"
                 onClick={toggleMobileMenu}
               >
-                Über Cooking Surface
+                Über ABK Stone
               </a>
               <a
                 href="/#referenzen"
